@@ -1,0 +1,13 @@
+---
+
+- name: download weave scope
+  get_url:
+    url: http://git.io/scope
+    dest: /usr/local/bin/scope
+
+- name: make scope executable
+  file:
+    path: /usr/local/bin/scope
+    mode: "0755"
+
+...
